@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system" method="upgrade">
+	<name>System - Zoom Lightbox</name>
+	<author>Joomla! Extensions Store</author>
+	<creationDate>September 2015</creationDate>
+	<copyright>Copyright (C) 2015 - Joomla! Extensions Store. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@storejextensions.org</authorEmail>
+	<authorUrl>http://storejextensions.org</authorUrl>
+	<version>1.1</version>
+	<description>ZOOMLIGHTBOX_DESCRIPTION</description>
+	<files>
+		<filename plugin="zoomlightbox">zoomlightbox.php</filename>
+		<folder>zoomlightbox</folder> 
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_zoomlightbox.ini</language> 
+		<language tag="en-GB">en-GB/en-GB.plg_system_zoomlightbox.sys.ini</language> 
+		<language tag="de-DE">de-DE/de-DE.plg_system_zoomlightbox.ini</language> 
+		<language tag="de-DE">de-DE/de-DE.plg_system_zoomlightbox.sys.ini</language> 
+		<language tag="fr-FR">fr-FR/fr-FR.plg_system_zoomlightbox.ini</language> 
+		<language tag="fr-FR">fr-FR/fr-FR.plg_system_zoomlightbox.sys.ini</language> 
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field type="spacer" hr="true" /> 
+				<field name="fontscale" type="list" default="150%" label="FONTSCALE" description="FONTSCALE DESC">
+					<option value="120%">120%</option>
+					<option value="140%">140%</option>
+					<option value="150%">150%</option>
+					<option value="180%">180%</option>
+					<option value="200%">200%</option>
+					<option value="200%">220%</option>
+					<option value="200%">240%</option>
+					<option value="200%">260%</option>
+					<option value="200%">280%</option>
+					<option value="200%">300%</option>
+				</field> 
+				<field name="imgscale" type="list" default="150%" label="IMGSCALE" description="IMGSCALE DESC">
+					<option value="120%">120%</option>
+					<option value="140%">140%</option>
+					<option value="150%">150%</option>
+					<option value="180%">180%</option>
+					<option value="200%">200%</option>
+					<option value="200%">220%</option>
+					<option value="200%">240%</option>
+					<option value="200%">260%</option>
+					<option value="200%">280%</option>
+					<option value="200%">300%</option>
+				</field>
+				
+				<field type="spacer" hr="true" /> 
+				<field name="autodimension" class="btn-group" type="radio"  default="0" label="AUTODIMENSION" description="AUTODIMENSION DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option> 
+				</field>
+				<field name="fancybox_width" type="text" default="800" label="FBWIDTH" description="FBWIDTH DESC"></field>
+				<field name="fancybox_height" type="text" default="600" label="FBHEIGHT" description="FBHEIGHT DESC"></field>
+				<field name="scrolling" type="list" default="auto" label="SCROLLING" description="SCROLLING_DESC">
+					<option value="auto">AUTO_SCROLL</option>
+					<option value="yes">YES_SCROLL</option>
+					<option value="hidden">HIDDEN_SCROLL</option>
+				</field> 
+				 
+				<field type="spacer" hr="true" /> 
+				<field name="zoomer_enabled" class="btn-group" type="radio"  default="1" label="ZOOMER_ENABLED" description="ZOOMER_ENABLED_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option> 
+				</field>
+				<field name="zoomer_selectors" type="text" default="img,p" label="ZOOMERSELECTORS" description="ZOOMERSELECTORS DESC"></field>
+				<field name="lente_width" type="text" default="250" label="ZOOMWIDTH" description="ZOOMWIDTH DESC"></field>
+				<field name="lente_height" type="text" default="250" label="ZOOMHEIGHT" description="ZOOMHEIGHT DESC"></field>
+				<field name="ratio" type="text" default="2" label="ZOOMRATIO" description="ZOOMRATIO DESC"></field>
+				
+				<field type="spacer" hr="true" /> 
+				<field name="corner_position" type="list" default="bottomright" label="POSITION_CORNER" description="POSITION_CORNER_DESC">
+					<option value="topright">TOP_RIGHT</option>
+					<option value="bottomright">BOTTOM_RIGHT</option>
+				</field> 
+				<field name="barscrolling" type="list" default="fixed" label="BARSCROLLING" description="BARSCROLLING_DESC">
+					<option value="fixed">FIXED_IMAGE</option>
+					<option value="absolute">SCROLLING_IMAGE</option>
+				</field> 
+				
+				<field type="spacer" hr="true" /> 
+				<field name="target_minwidth" type="text" default="200" label="TARGET_MINWIDTH" description="TARGET_MINWIDTH DESC"></field>
+				<field name="target_minheight" type="text" default="100" label="TARGET_MINHEIGHT" description="TARGET_MINHEIGHT DESC"></field>
+				<field name="jquery_include" type="list" default="1" label="JQUERY_INCLUDE" description="JQUERY_INCLUDE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config> 
+</extension>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site"	method="upgrade">
+	<name>Fast Font</name>
+	<author>Pixel Point Creative</author>
+	<creationDate>May 2010</creationDate>
+	<copyright>Copyright (C) 2010 Pixel Point Creative LLC</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@pixelpointcreative.com</authorEmail>
+	<authorUrl>www.pixelpointcreative.com</authorUrl>
+	<version>1.1</version>
+	<description>
+	Fast font can change font sizes site-wide if all your font sizes are declared in percentages. You can also mix and match. 
+        If you don't want certain fonts to be resized, like the menu, for example, declare a fixed font size. 
+        The default percentage is set to 80%. This will override your body font setting.The module uses a cookie to remember the user's preferred font size.
+	 </description>
+	<files>
+		<filename module="mod_ppc_fastfont">mod_ppc_fastfont.php</filename>
+		<folder>js</folder>
+		<folder>img</folder>
+        <folder>elements</folder>
+		
+	</files>
+	<params addpath="/modules/mod_ppc_fastfont/elements">
+<param type="logo" default="" ></param>
+
+		<param name="defaultSize" type="text" default="80" label="Default Font Size %" description="The default size of your font is 80%." />
+		<param name="useImg" type="list" default="1" label="Text Only?" description="This will use only text for the controls.">
+			<option value="1">No</option>
+			<option value="0">Yes</option>
+		</param>
+<param name="size" type="list" default="20" label="Button Size" description="Size of Buttons.">
+			<option value="20">Small</option>
+			<option value="27">Medium</option>
+                        <option value="35">Large</option>
+		</param>
+<param name="color" type="text" default="#686868" label="Button Color" description="The color of the buttons. Use hex code including #, or standard colors like 'yellow' or use 'transparent' to let the background show through." />
+<param name="useGrad" type="list" default="../modules/mod_fontsize/img/20grad.png" label="Use Gradient" description="This will add a gradient overlay.">
+			<option value="none">No</option>
+			<option value="grad">Yes</option>
+		</param>
+<param name="margin" type="text" default="0px 0px 0px 5px" label="Margin" description="Button Margin." />
+<param name="border" type="text" default="none" label="Border" description="Border Properties. Add in this format: 1px sold #000" />
+
+	</params>
+	
+	<config>
+	<fields name="params">		   
+	   <fieldset name="basic" label="General Setting"  addfieldpath="/modules/mod_ppc_fastfont/elements/">	 
+	   <field label="Version Check" type="upgradecheck" />
+		<field name="defaultSize" type="text" default="80" label="Default Font Size %" description="The default size of your font is 80%." />
+		<field name="useImg" type="list" default="1" label="Text Only?" description="This will use only text for the controls.">
+			<option value="1">No</option>
+			<option value="0">Yes</option>
+		</field>
+<field name="size" type="list" default="20" label="Button Size" description="Size of Buttons.">
+			<option value="20">Small</option>
+			<option value="27">Medium</option>
+                        <option value="35">Large</option>
+		</field>
+<field name="color" type="text" default="#686868" label="Button Color" description="The color of the buttons. Use hex code including #, or standard colors like 'yellow' or use 'transparent' to let the background show through." />
+<field name="useGrad" type="list" default="../modules/mod_fontsize/img/20grad.png" label="Use Gradient" description="This will add a gradient overlay.">
+			<option value="none">No</option>
+			<option value="grad">Yes</option>
+		</field>
+<field name="margin" type="text" default="0px 0px 0px 5px" label="Margin" description="Button Margin." />
+<field name="border" type="text" default="none" label="Border" description="Border Properties. Add in this format: 1px sold #000" />
+</fieldset>
+	</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="Fast Font Auto Updater">http://www.pixelpointcreative.com/autoupdates/fastfont.xml</server>
+	</updateservers>
+</extension>

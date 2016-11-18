@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+        <name>JT Fixed Display</name> 
+        <author>joomtut.com</author> 
+        <creationDate>>Jun-2015</creationDate> 
+        <copyright>(C) joomtut.com. All rights reserved.</copyright> 
+        <license>http://www.gnu.org/copyleft/gpl.html</license> 
+        <authorEmail>contact@joomtut.com</authorEmail> 
+        <authorUrl>http://joomtut.com</authorUrl> 
+        <version>3.5.0</version> 
+        <description>MOD_JT_FIXED_DISPLAY_XML_DESCRIPTION</description>
+        <files>
+			<filename module="mod_jt_fixed_display">mod_jt_fixed_display.php</filename>
+			<filename>index.html</filename>
+        </files>
+		<media destination="mod_jt_fixed_display" folder="media"> 
+			<folder>images</folder>
+			<folder>assets</folder>
+		</media>
+		<languages folder="language">
+			<language tag="en-GB">en-GB/en-GB.mod_jt_fixed_display.ini</language>
+			<language tag="en-GB">en-GB/en-GB.mod_jt_fixed_display.sys.ini</language>
+		</languages>
+   	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="jtf_maincontentw" type="text" default="1000" label="MOD_JT_FIXED_DISPLAY_PAGE_WIDTH_LABEL" description="MOD_JT_FIXED_DISPLAY_PAGE_WIDTH_DESC" />
+				<field type="spacer" label="&lt;hr &#47;&gt;" />
+				<field name="" type="list" default="MOD_JT_FIXED_DISPLAY_TOP_POSITION" label="MOD_JT_FIXED_DISPLAY_LEFT_LABEL" description="MOD_JT_FIXED_DISPLAY_LEFT_DESC">
+					<option>MOD_JT_FIXED_DISPLAY_TOP_POSITION</option>
+					<option>MOD_JT_FIXED_DISPLAY_CENTER_POSITION</option>
+					<option>MOD_JT_FIXED_DISPLAY_BOTTOM_POSITION</option>
+				</field>
+				<field name="" type="list" default="MOD_JT_FIXED_DISPLAY_FIXED" label="MOD_JT_FIXED_DISPLAY_LEFT_OPTION_LABEL" description="MOD_JT_FIXED_DISPLAY_LEFT_OPTION_DESC" >
+					<option>MOD_JT_FIXED_DISPLAY_FIXED</option>
+					<option>MOD_JT_FIXED_DISPLAY_RESPONSIVE</option>
+					<option>MOD_JT_FIXED_DISPLAY_CENTER</option>
+					<option>MOD_JT_FIXED_DISPLAY_NONE</option>
+				</field>
+				<field name="jtf_leftboxw" type="text" default="100" label="MOD_JT_FIXED_DISPLAY_LEFT_BOX_WIDTH_LABEL" description="MOD_JT_FIXED_DISPLAY_LEFT_BOX_WIDTH_DESC" />
+				<field name="jtf_leftboxh" type="text" default="200" label="MOD_JT_FIXED_DISPLAY_LEFT_BOX_HEIGHT_LABEL" description="MOD_JT_FIXED_DISPLAY_LEFT_BOX_HEIGHT_DESC" />
+				<field name="jtf_lefttype" type="list" default="0" label="MOD_JT_FIXED_DISPLAY_LEFT_TYPE_LABEL" description="MOD_JT_FIXED_DISPLAY_LEFT_TYPE_DESC">
+					<option value="0">MOD_JT_FIXED_DISPLAY_IMAGE_LINK</option>
+					<option>MOD_JT_FIXED_DISPLAY_MODULE_ID</option>
+					<option value="2">MOD_JT_FIXED_DISPLAY_MODULE</option>
+				</field>
+				<field name="" type="media" directory="banners" default="media/mod_jt_fixed_display/images/jt_fixed_display_left_box.jpg" label="MOD_JT_FIXED_DISPLAY_LEFT_BOX_IMAGE_LABEL" description="MOD_JT_FIXED_DISPLAY_LEFT_BOX_IMAGE_DESC" />
+				<field name="" type="text" default="Joomla! Support" label="MOD_JT_FIXED_DISPLAY_LEFT_BOX_IMAGE_ALT_LABEL" description="MOD_JT_FIXED_DISPLAY_LEFT_BOX_IMAGE_ALT_DESC" />
+				<field name="" type="url" default="http://www.joomtut.com" label="MOD_JT_FIXED_DISPLAY_LEFT_BOX_LINK_LABEL" description="MOD_JT_FIXED_DISPLAY_LEFT_BOX_LINK_DESC" />
+				<field name="" type="list" default="_parent" label="MOD_JT_FIXED_DISPLAY_LEFT_LINK_TARGET_LABEL" description="MOD_JT_FIXED_DISPLAY_LEFT_LINK_TARGET_DESC">
+					<option>MOD_JT_FIXED_DISPLAY_LINK_TARGET_PARENT</option>
+					<option>MOD_JT_FIXED_DISPLAY_LINK_TARGET_NEW</option>
+				</field>
+				<field name="" type="text" default="" label="MOD_JT_FIXED_DISPLAY_LEFT_BOX_ID_LABEL" description="MOD_JT_FIXED_DISPLAY_LEFT_BOX_ID_DESC" />
+				<field name="jtf_left_position" type="text" default="jt_leftbox" label="MOD_JT_FIXED_DISPLAY_LEFT_BOX_POSITION_LABEL" description="MOD_JT_FIXED_DISPLAY_LEFT_BOX_POSITION_DESC" />
+				<field name="jtf_leftboxcss" type="textarea" cols="30" rows="5" default="z-index:99999;" label="MOD_JT_FIXED_DISPLAY_LEFT_BOX_CSS_LABEL" description="MOD_JT_FIXED_DISPLAY_LEFT_BOX_CSS_DESC" />
+				<field type="spacer" label="&lt;hr &#47;&gt;" />
+				<field name="" type="list" default="MOD_JT_FIXED_DISPLAY_TOP_POSITION" label="MOD_JT_FIXED_DISPLAY_RIGHT_LABEL" description="MOD_JT_FIXED_DISPLAY_RIGHT_DESC">
+					<option>MOD_JT_FIXED_DISPLAY_TOP_POSITION</option>
+					<option>MOD_JT_FIXED_DISPLAY_CENTER_POSITION</option>
+					<option>MOD_JT_FIXED_DISPLAY_BOTTOM_POSITION</option>
+				</field>
+				<field name="" type="list" default="MOD_JT_FIXED_DISPLAY_FIXED" label="MOD_JT_FIXED_DISPLAY_RIGHT_OPTION_LABEL" description="MOD_JT_FIXED_DISPLAY_RIGHT_OPTION_DESC" >
+					<option>MOD_JT_FIXED_DISPLAY_FIXED</option>
+					<option>MOD_JT_FIXED_DISPLAY_RESPONSIVE</option>
+					<option>MOD_JT_FIXED_DISPLAY_CENTER</option>
+					<option>MOD_JT_FIXED_DISPLAY_NONE</option>
+				</field>
+				<field name="jtf_rightboxw" type="text" default="100" label="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_WIDTH_LABEL" description="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_WIDTH_DESC" />
+				<field name="jtf_rightboxh" type="text" default="200" label="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_HEIGHT_LABEL" description="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_HEIGHT_DESC" />
+				<field name="jtf_righttype" type="list" default="0" label="MOD_JT_FIXED_DISPLAY_RIGHT_TYPE_LABEL" description="MOD_JT_FIXED_DISPLAY_RIGHT_TYPE_DESC">
+					<option value="0">MOD_JT_FIXED_DISPLAY_IMAGE_LINK</option>
+					<option>MOD_JT_FIXED_DISPLAY_MODULE_ID</option>
+					<option value="2">MOD_JT_FIXED_DISPLAY_MODULE</option>
+				</field>
+				<field name="" type="media" directory="banners" default="media/mod_jt_fixed_display/images/jt_fixed_display_right_box.jpg" label="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_IMAGE_LABEL" description="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_IMAGE_DESC" />
+				<field name="" type="text" default="Joomla! Tutorials and Extensions" label="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_IMAGE_ALT_LABEL" description="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_IMAGE_ALT_DESC" />
+				<field name="" type="url" default="http://www.joomtut.com" label="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_LINK_LABEL" description="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_LINK_DESC" />
+				<field name="" type="list" default="_parent" label="MOD_JT_FIXED_DISPLAY_RIGHT_LINK_TARGET_LABEL" description="MOD_JT_FIXED_DISPLAY_RIGHT_LINK_TARGET_DESC">
+					<option>MOD_JT_FIXED_DISPLAY_LINK_TARGET_PARENT</option>
+					<option>MOD_JT_FIXED_DISPLAY_LINK_TARGET_NEW</option>
+				</field>
+				<field name="" type="text" default="" label="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_ID_LABEL" description="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_ID_DESC" />
+				<field name="jtf_right_position" type="text" default="jt_rightbox" label="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_POSITION_LABEL" description="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_POSITION_DESC" />
+				<field name="jtf_rightboxcss" type="textarea" cols="30" rows="5" default="z-index:99999;" label="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_CSS_LABEL" description="MOD_JT_FIXED_DISPLAY_RIGHT_BOX_CSS_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode"	type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
